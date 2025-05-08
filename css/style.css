@@ -1,0 +1,23 @@
+
+body {
+    background-color: #f5f5f5;
+    font-family: 'Arial', sans-serif;
+}
+
+header, footer {
+    background-color: #343a40;
+    color: #ffffff;
+}
+
+.card {
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.btn-primary {
+    background-color: #ff5722;
+    border-color: #ff5722;
+}
