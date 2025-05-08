@@ -10,15 +10,6 @@ O objetivo deste projeto é criar um site de receitas inspirado no aconchego da 
 
 ---
 
-## 👥 **Integrantes do Grupo:**
-- Caio Baima  
-- João Vitor Carneiro  
-- Maria Vitória Martelli  
-- Matheus dos Santos Duarte  
-- Raílla Duarte  
-
----
-
 ## 🛠️ **Tecnologias Utilizadas:**
 
 - HTML
@@ -29,21 +20,13 @@ O objetivo deste projeto é criar um site de receitas inspirado no aconchego da 
 - GitHub (versionamento)
 
 ---
+## 👥 **Integrantes do Grupo:**
+- Caio Baima  
+- João Vitor Carneiro  
+- Maria Vitória Martelli  
+- Matheus dos Santos Duarte  
+- Raílla Duarte  
 
-## 📂 **Estrutura do Projeto:**
 
-│── index.html
-│── about.html
-│── contact.html
-│── css/
-│ └── style.css
-│── js/
-│ └── main.js
-│── assets/
-│ └── images/
-│ ├── kitchen_table.jpg
-│ ├── subtle_wood_texture.jpg
-│ ├── bolo_fuba.jpg
-│ ├── canjica.jpg
-│ └── pudim.jpg
-└── README.md
+
+
