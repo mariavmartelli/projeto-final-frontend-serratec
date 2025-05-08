@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Adicionar Receita</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="bg-light py-5 text-center shadow" style="background-image: url('assets/images/wood_texture.jpg'); background-size: cover;">
+        <h1 class="logo">Sabor & Cia</h1>
+        <p class="tagline">Receitas com o carinho da casa da Vó</p>
+    </header>
+
+    <!-- Formulário de Contato -->
+    <section class="container py-5">
+        <h2 class="mb-4 text-center">Receita</h2>
+        <div class="p-4 bg-white shadow rounded" style="max-width: 600px; margin: auto; background-color: #FFE5D9;">
+            <form id="contactForm">
+                <div class="mb-3">
+                    <label 
+                    for="autor" 
+                    class="form-label">Autor</label>
+                    <input 
+                    type="text" 
+                    class="form-control" 
+                    id="autor" 
+                    required
+                    >
+                </div>
+                <div class="mb-3">
+                    <label 
+                    for="receita" 
+                    class="form-label">Receita
+                </label>
+                    <input 
+                    type="text" 
+                    class="form-control" 
+                    id="receita" 
+                    required
+                    >
+                </div>
+                <div class="mb-3">
+                    <label 
+                    for="message" 
+                    class="form-label">Descrição
+                </label>
+                    <textarea 
+                    class="form-control" 
+                    id="message" 
+                    rows="2" 
+                    required></textarea>
+                </div>
+                
+                <div class="mb-3">
+                    <label 
+                    for="message" 
+                    class="form-label">Igredientes
+                </label>
+                    <textarea 
+                    class="form-control" 
+                    id="message" 
+                    rows="2" 
+                    required>
+                </textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="message" 
+                    class="form-label">Método de preparo
+                </label>
+                    <textarea class="form-control" 
+                    id="message" 
+                    rows="5" 
+                    required>
+                </textarea>
+                </div>
+                <div class="mb-3">
+                    <label 
+                    for="imagem" 
+                    class="form-label">Imagem da Receita
+                </label>
+                    <input 
+                    type="file" 
+                    class="form-control" 
+                    id="imagem" 
+                    name="imagem" 
+                    accept="image/*" 
+                    required
+                    >
+                </div>
+                <div class="text-center">
+                    <button 
+                    type="submit" 
+                    class="btn btn-primary">Enviar Receita
+                </button>
+                    <button 
+                    class="btn btn-primary" 
+                    onclick="window.location.href='./index.html'">Voltar ao início
+                </button>
+                </div>
+              
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-secondary text-white py-4 text-center mt-5" style="background-color: #6C584C;">
+        <p>&copy; 2025 Sabor & Cia. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
