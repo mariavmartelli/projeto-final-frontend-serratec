@@ -1,68 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Merriweather:wght@400;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <title>Sabor & Cia - Receitas Deliciosas</title>
+    <title>Sabor & Cia - Receitas Aconchegantes</title>
 </head>
+
 <body>
-    <header class="bg-primary text-white py-3">
-        <div class="container d-flex justify-content-between align-items-center">
-            <h1>Sabor & Cia</h1>
-            <nav>
-                <a href="index.html" class="text-white mx-2">Home</a>
-                <a href="about.html" class="text-white mx-2">Quem Somos</a>
-                <a href="contact.html" class="text-white mx-2">Contato</a>
-            </nav>
-        </div>
+
+    <!-- Header -->
+    <header class="bg-light py-5 text-center shadow mb-5"
+        style="background-image: url('assets/images/wood_texture.jpg'); background-size: cover;">
+        <h1 class="logo">Sabor & Cia</h1>
+        <p class="tagline">Receitas com o carinho da casa da Vó</p>
     </header>
 
-    <main class="container py-5">
-        <h2 class="mb-4">Receitas em Destaque</h2>
-        <div class="row g-4">
-            <div class="col-md-4">
-                <div class="card shadow-sm">
-                    <img src="assets/images/feijoada.jpg" class="card-img-top" alt="Feijoada Completa">
-                    <div class="card-body">
-                        <h5 class="card-title">Feijoada Completa</h5>
-                        <p class="card-text">Um clássico brasileiro, perfeito para o almoço de domingo.</p>
-                        <a href="#" class="btn btn-primary">Ver Receita</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card shadow-sm">
-                    <img src="assets/images/brigadeiro.jpg" class="card-img-top" alt="Brigadeiro">
-                    <div class="card-body">
-                        <h5 class="card-title">Brigadeiro Tradicional</h5>
-                        <p class="card-text">O docinho que não pode faltar em nenhuma festa.</p>
-                        <a href="#" class="btn btn-primary">Ver Receita</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card shadow-sm">
-                    <img src="assets/images/moqueca.jpg" class="card-img-top" alt="Moqueca Baiana">
-                    <div class="card-body">
-                        <h5 class="card-title">Moqueca Baiana</h5>
-                        <p class="card-text">Um prato típico do nordeste com sabor marcante.</p>
-                        <a href="#" class="btn btn-primary">Ver Receita</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
+    <!-- Banner -->
+    <section class="banner text-center py-5 mb-5">
+        <h2>Sabores que Acolhem</h2>
+        <p>Encontre receitas simples, que aquecem a alma e o coração.</p>
+        <button class="btn btn-banner" onclick="window.location.href='./about.html'">Sobre nós</button>
+        <button class="btn btn-banner" onclick="window.location.href='./contact.html'">Contato</button>
+        <button class="btn btn-banner" onclick="window.location.href='./formulario.html'">Adicionar Receita</button>
+    </section>
 
-    <footer class="bg-dark text-white py-4 mt-5">
-        <div class="container text-center">
-            <p>&copy; 2025 Sabor & Cia. Todos os direitos reservados.</p>
+    <!-- Receitas em Destaque -->
+    <section class="container py-5">
+        <h2 class="mb-4 text-center">Receitas da Vovó</h2>
+        <div id="recipe-carousel" class="row g-4">
+            <!-- Receitas carregadas dinamicamente -->
         </div>
+    </section>
+
+    <footer class="bg-secondary text-white py-4 text-center mt-5" style="background-color: #6C584C;">
+        <p>&copy; 2025 Sabor & Cia. Todos os direitos reservados.</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>
