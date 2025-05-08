@@ -3,7 +3,7 @@ body {
     background-color: #F7ECE1;
     font-family: 'Merriweather', serif;
     color: #6C584C;
-    background-image: url('../assets/images/wood.png');
+    background-image: url('assets/images/subtle_wood_texture.jpg');
     background-size: cover;
     background-attachment: fixed;
 }
@@ -21,6 +21,7 @@ body {
 
 .banner {
     background-color: rgba(212, 163, 115, 0.9);
+    background-image: url('assets/images/image.png');
     background-size: cover;
     background-blend-mode: darken;
     padding: 60px 0;
@@ -63,6 +64,5 @@ body {
 }
 
 footer{
- background-color: #ffe5d9;
- color: #6C584C;
+ background-color: #6C584C;
 }
