@@ -1,68 +1,50 @@
-
+/* ===== Fundo da página ===== */
 body {
-    background-color: #F7ECE1;
-    font-family: 'Merriweather', serif;
-    color: #6C584C;
-    background-image: url('assets/images/subtle_wood_texture.jpg');
+    background-color: #F7ECE1;  /* Cor de fundo suave */
+    background-image: url('assets/images/subtle_wood_texture.jpg');  /* Textura sutil */
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: fixed;  /* Fixa o fundo ao rolar a página */
 }
 
+/* ===== Estilo do título principal (logo) ===== */
 .logo {
-    font-family: 'Great Vibes', cursive;
-    font-size: 5rem;
+    font-family: 'Great Vibes', cursive;  /* Fonte cursiva para dar um ar artesanal */
+    font-size: 5rem;  /* Tamanho grande para destaque */
     color: #D4A373;
 }
 
-.tagline {
-    font-style: italic;
-    color: #8B5E3C;
-}
-
+/* ===== Seção de destaque (banner) ===== */
 .banner {
-    background-color: rgba(212, 163, 115, 0.9);
-    background-image: url('assets/images/image.png');
-    background-size: cover;
-    background-blend-mode: darken;
+    background-color: rgba(212, 163, 115, 0.9);  /* Fundo semitransparente */
+    background-image: url('assets/images/image.png');  /* Imagem de fundo */
     padding: 60px 0;
     border-radius: 15px;
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);  /* Sombra para dar profundidade */
 }
 
+/* ===== Cards ===== */
 .card {
+    background-color: #FFE5D9;  /* Fundo pastel */
     border-radius: 20px;
-    background-color: #FFE5D9;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-    transform: scale(1.03);
-    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.15);
+    transform: scale(1.03);  /* Aumenta um pouco o card ao passar o mouse */
 }
 
+/* ===== Botão primário ===== */
 .btn-primary {
     background-color: #D4A373;
-    border-color: #D4A373;
     border-radius: 30px;
-    font-weight: bold;
 }
-.btn-banner{
-    background-color: #ffe5d9;
-    border-color: #ffe5d9;
-    border-radius: 30px;
-    font-weight: bold;
-}
+
 .btn-primary:hover {
-    background-color: #6C584C;
+    background-color: #6C584C;  /* Tom mais escuro ao passar o mouse */
 }
 
-.btn-inicio{
-    margin: 20px;
-    display: flex;
-    justify-content: center;
+/* ===== Rodapé ===== */
+footer {
+    background-color: #6C584C;  /* Fundo escuro para contraste */
 }
 
-footer{
- background-color: #6C584C;
-}
