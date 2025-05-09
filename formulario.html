@@ -33,6 +33,7 @@
                     required
                     >
                 </div>
+
                 <div class="mb-3">
                     <label 
                     for="receita" 
@@ -45,6 +46,7 @@
                     required
                     >
                 </div>
+
                 <div class="mb-3">
                     <label 
                     for="message" 
@@ -59,22 +61,22 @@
                 
                 <div class="mb-3">
                     <label 
-                    for="message" 
+                    for="igredientes" 
                     class="form-label">Igredientes
                 </label>
                     <textarea 
                     class="form-control" 
-                    id="message" 
+                    id="igredientes" 
                     rows="2" 
                     required>
                 </textarea>
                 </div>
                 <div class="mb-3">
-                    <label for="message" 
+                    <label for="preparo" 
                     class="form-label">Método de preparo
                 </label>
                     <textarea class="form-control" 
-                    id="message" 
+                    id="preparo" 
                     rows="5" 
                     required>
                 </textarea>
@@ -85,8 +87,9 @@
                     class="form-label">Imagem da Receita
                 </label>
                     <input 
-                    type="file" 
+                    type="text" 
                     class="form-control" 
+                    placeholder="Inclua a URL"
                     id="imagem" 
                     name="imagem" 
                     accept="image/*" 
@@ -95,7 +98,8 @@
                 </div>
                 <div class="text-center">
                     <button 
-                    type="submit" 
+                    onclick="salvarReceita()"
+                    type="button" 
                     class="btn btn-primary">Enviar Receita
                 </button>
                     <button 
@@ -108,8 +112,10 @@
         </div>
     </section>
 
-    <footer class="bg-secondary text-white py-4 text-center mt-5" style="background-color: #6C584C;">
+    <footer class="rodape py-4 text-center mt-5">
         <p>&copy; 2025 Sabor & Cia. Todos os direitos reservados.</p>
     </footer>
+
+    <script src="js/evento.js"></script>
 </body>
 </html>
