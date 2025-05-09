@@ -29,8 +29,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div class="card-body">
                     <h5 class="card-title">${recipe.receita}</h5>
                     <p class="card-text">${recipe.message}</p>
-                    <button class="btn btn-primary like-btn">Ver Mais</button>
-                    <button class="btn btn-primary like-btn" for="txt_curtida_${recipe.id}" >Curtir</button>
+                    <button class="btn btn-primary ver-mais-btn" onclick="window.location.href='../receita.html?id=${recipe.id}'">Ver Mais</button>
+                    <button class="btn btn-primary like-btn"  for="txt_curtida_${recipe.id}" >Curtir</button>
                     <p class="txtcurtida" style="display:inline; margin-left:5px;">0</p>
                 </div>
             </div>`;
@@ -45,14 +45,13 @@ document.addEventListener("DOMContentLoaded", function () {
       mostrarReceitas(response, false);
       console.log(response);
       document.querySelectorAll(".like-btn").forEach((btn) => {
-    btn.addEventListener("click", function (event) {
-      const contagem = event.currentTarget.parentElement.querySelector(".txtcurtida")
-      contagem.textContent = parseInt(contagem.textContent)+1;
-      console.log(contagem);    
-      // alert("Receita curtida! ❤️");
+        btn.addEventListener("click", function (event) {
+          const contagem =
+            event.currentTarget.parentElement.querySelector(".txtcurtida");
+          contagem.textContent = parseInt(contagem.textContent) + 1;
+          console.log(contagem);
+          // alert("Receita curtida! ❤️");
+        });
+      });
     });
-  });
-    });
-
-  
 });
