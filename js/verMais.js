@@ -1,21 +1,16 @@
- function mostrarReceitas(array, local = true) {
-    const path = local ? "../assets/images/" : "";
-    array.forEach((recipe) => {
-      const card = document.createElement("div");
-      card.className = "col-md-4";
-      card.innerHTML = `
-            <div class="card p-4 text-center">
-                <img src="${path}${recipe.imagem}" class="card-img-top mb-3" alt="${recipe.receita}" style="border-radius: 20px;">
-                <div class="card-body">
-                    <h5 class="card-title">${recipe.receita}</h5>
-                    <p class="card-text">${recipe.message}</p>
-                    <button class="btn btn-primary ver-mais-btn" onclick="window.location.href='../receitas.html'">Ver Mais</button>
-                    <button class="btn btn-primary like-btn"  for="txt_curtida_${recipe.id}" >Curtir</button>
-                    <p class="txtcurtida" style="display:inline; margin-left:5px;">0</p>
-                </div>
-            </div>`;
-      carousel.appendChild(card);
-    });
-  }
+const parametros = new URLSearchParams(window.location.search);
+const id = parametros.get("id");
+console.log(id);
 
-  mostrarReceitas();
+fetch(`https://681d4509f74de1d219af4745.mockapi.io/Receitas/${id}`)
+  .then((response) => response.json())
+  .then((response) => {
+    console.log(response);
+    const containerReceita = document.getElementById("receita-detalhes");
+    containerReceita.innerHTML = `<img src="${response.imagem} " style="width:350px; height:350px; border-radius:50%;">
+    <div style="border-radius: 12px; border: 1px solid #6c584c; padding:1rem">
+    <p class="titulo" style= "border-bottom: 1px solid #6c584c">${response.receita}<p>
+    <p class="normal" style= "border-bottom: 1px solid #6c584c">${response.igredientes}<p>
+    <p class="normal" >${response.preparo}<p>
+    </div>`;
+  });

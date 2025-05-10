@@ -13,7 +13,11 @@ function salvarReceita() {
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(objetoReceita),
   })
-    .then((response) => console.log("Sucesso"))
+    .then((response) =>  window.location.href = "http://127.0.0.1:5500/index.html")
     .catch((response) => console.log("Erro"));
 //   console.log(objetoReceita);
+}
+
+function voltarParaHome(){
+    window.location.href = "http://127.0.0.1:5500/index.html";
 }

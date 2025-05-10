@@ -10,7 +10,7 @@ function salvarComentario() {
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(objetoContato),
   })
-    .then((response) => console.log("Sucesso"))
+    .then((response) => window.location.reload())
     .catch((response) => console.log("Erro"));
   console.log(objetoContato);
 }
