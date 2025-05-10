@@ -1,6 +1,6 @@
 # 🍰 Sabor & Cia - Receitas Acolhedoras
 
-Projeto desenvolvido como requisito da disciplina **Frontend Essencial**, com foco em estruturação HTML semântica, estilização CSS, interatividade JavaScript, deploy no Netlify e integração com GitHub.
+Projeto Final desenvolvido como requisito da disciplina **Frontend Essencial**, do Serratec, com foco em estruturação HTML semântica, estilização CSS, interatividade JavaScript, integração com GitHub e deploy no Netlify.
 
 ---
 
@@ -26,6 +26,8 @@ O objetivo deste projeto é criar um site de receitas inspirado no aconchego da 
 - Maria Vitória Martelli  
 - Matheus dos Santos Duarte  
 - Raílla Duarte  
+
+
 
 
 
