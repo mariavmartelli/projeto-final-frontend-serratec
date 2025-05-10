@@ -3,30 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link
-      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Merriweather:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+
+    <!-- Fonte personalizada para dar um toque caseiro e acolhedor ao design -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Merriweather:wght@400;700&display=swap" rel="stylesheet" />
+
+    <!-- Bootstrap para facilitar a organização do layout e estilização -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <!-- Estilos personalizados da aplicação -->
     <link rel="stylesheet" href="./css/style.css">
-    <title>Receitas</title>
+
+    <title>Receitas - Sabor & Cia</title>
 </head>
 <body>
-        <header
-      class="bg-light py-5 text-center shadow mb-5"
-      style="
-        background-image: url('assets/images/wood_texture.jpg');
-        background-size: cover;
-      "
-    >
-      <h1 class="logo">Sabor & Cia</h1>
-      <p class="tagline">Receitas com o carinho da casa da Vó</p>
-    </header>
-    <div class="container">
-      <div id="receita-detalhes" style="display: flex; gap: 100px;">
 
-      </div>
+    <!-- Cabeçalho da página com fundo texturizado e título centralizado -->
+    <header class="bg-light py-5 text-center shadow mb-5" 
+            style="background-image: url('assets/images/wood_texture.jpg'); background-size: cover;">
+        <h1 class="logo">Sabor & Cia</h1> <!-- Título principal da página -->
+        <p class="tagline">Receitas com o carinho da casa da Vó</p> <!-- Subtítulo acolhedor -->
+    </header>
+
+    <!-- Container principal onde os detalhes da receita serão exibidos -->
+    <div class="container">
+        <!-- Div que vai receber o conteúdo da receita de forma dinâmica -->
+        <div id="receita-detalhes" style="display: flex; gap: 100px;">
+            <!-- O conteúdo será inserido via JavaScript no arquivo verMais.js -->
+        </div>
     </div>
+
+    <!-- Script responsável por gerenciar a exibição da receita -->
     <script src="js/verMais.js"></script>
+
 </body>
 </html>

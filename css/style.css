@@ -1,95 +1,111 @@
-
+/* Estiliza o fundo da página com uma cor clara e uma textura fixa */
 body {
-    background-color: #F7ECE1;
-    font-family: 'Merriweather', serif;
-    color: #6C584C;
-    background-image: url('../assets/images/wood.png');
-    background-size: cover;
-    background-attachment: fixed;
+    background-color: #F7ECE1;  /* Fundo em tom pastel */
+    font-family: 'Merriweather', serif;  /* Fonte principal do site */
+    color: #6C584C;  /* Cor do texto em tom terroso */
+    background-image: url('../assets/images/wood.png');  /* Imagem de fundo sutil */
+    background-size: cover;  /* A imagem cobre toda a tela */
+    background-attachment: fixed;  /* A imagem não se move ao rolar a página */
 }
 
+/* Estilo para o título principal */
 .logo {
-    font-family: 'Great Vibes', cursive;
-    font-size: 5rem;
-    color: #D4A373;
+    font-family: 'Great Vibes', cursive;  /* Fonte cursiva para combinar com o estilo do site */
+    font-size: 5rem;  /* Tamanho bem grande para destaque */
+    color: #D4A373;  /* Cor em tom quente que lembra madeira clara */
 }
 
+/* Estilo para o subtítulo */
 .tagline {
-    font-style: italic;
-    color: #8B5E3C;
+    font-style: italic;  /* Deixa o texto em itálico */
+    color: #8B5E3C;  /* Tom mais escuro para criar contraste */
 }
 
+/* Estilização do banner */
 .banner {
-    background-color: rgba(212, 163, 115, 0.9);
-    background-size: cover;
-    background-blend-mode: darken;
-    padding: 60px 0;
-    border-radius: 15px;
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+    background-color: rgba(212, 163, 115, 0.9);  /* Fundo semitransparente */
+    padding: 60px 0;  /* Espaçamento vertical */
+    border-radius: 15px;  /* Bordas arredondadas */
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);  /* Sombra suave */
 }
 
+/* Estilo dos cards de receita */
 .card {
-    border-radius: 20px;
-    background-color: #FFE5D9;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 20px;  /* Bordas arredondadas para suavizar o visual */
+    background-color: #FFE5D9;  /* Fundo em tom pastel */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);  /* Sombra leve */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Efeito de animação suave */
 }
 
+/* Efeito ao passar o mouse no card */
 .card:hover {
-    transform: scale(1.03);
-    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.15);
+    transform: scale(1.03);  /* Aumenta o card levemente */
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.15);  /* Sombra mais forte */
 }
 
+/* Estilo padrão dos botões */
 .btn-primary {
-    background-color: #D4A373;
-    border-color: #D4A373;
+    background-color: #D4A373;  /* Fundo em tom quente */
+    border-color: #D4A373;  /* Borda da mesma cor do fundo */
+    border-radius: 30px;  /* Bordas arredondadas */
+    font-weight: bold;  /* Texto em negrito */
+}
+
+/* Estilo específico para os botões no banner */
+.btn-banner {
+    background-color: #FFE5D9;  
+    border-color: #FFE5D9;
     border-radius: 30px;
     font-weight: bold;
 }
-.btn-banner{
-    background-color: #ffe5d9;
-    border-color: #ffe5d9;
-    border-radius: 30px;
-    font-weight: bold;
-}
+
+/* Efeito ao passar o mouse no botão primário */
 .btn-primary:hover {
-    background-color: #6C584C;
+    background-color: #6C584C;  /* Tom mais escuro para destaque */
 }
 
-.btn-inicio{
+/* Centraliza os botões de navegação */
+.btn-inicio {
     margin: 20px;
-    display: flex;
-    justify-content: center;
+    display: flex;  /* Exibe os botões em linha */
+    justify-content: center;  /* Centraliza os botões */
 }
 
-footer{
- background-color: #ffe5d9;
- color: #6C584C;
+/* Estilo do rodapé */
+footer {
+    background-color: #FFE5D9;  /* Fundo em tom pastel */
+    color: #6C584C;  /* Texto em tom terroso */
 }
 
-.titulo{
-    font-size: 70px;
+/* Estilo para títulos grandes */
+.titulo {
+    font-size: 70px;  /* Tamanho bem grande para destaque */
 }
 
-.normal{
-    font-size: 35px;
+/* Estilo para textos em tamanho normal */
+.normal {
+    font-size: 35px;  /* Tamanho intermediário */
 }
 
-#input-pesquisa{
-    background-color: white;
-    width: 600px;
-    line-height: 32px;
-    border-radius: 20%;
+/* Estilo para o campo de pesquisa */
+#input-pesquisa {
+    background-color: white;  /* Fundo branco para destacar o campo */
+    width: 600px;  /* Largura grande para facilitar a escrita */
+    line-height: 32px;  /* Altura da linha para dar mais espaço */
+    border-radius: 20%;  /* Bordas arredondadas */
 }
 
-.btn-pesquisar{
-    border-radius: 10px;
-    background-color: #FFE5D9;
-    border: none;
-    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.15);
+/* Estilo para o botão de pesquisa */
+.btn-pesquisar {
+    border-radius: 10px;  /* Bordas levemente arredondadas */
+    background-color: #FFE5D9;  /* Fundo em tom pastel */
+    border: none;  /* Sem borda */
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.15);  /* Sombra para dar destaque */
 }
-.pai-pesquisar{
-    display: flex;
-    justify-content: center;
-    gap: 0.20rem;
+
+/* Container para organizar a barra de pesquisa */
+.pai-pesquisar {
+    display: flex;  /* Exibe os elementos em linha */
+    justify-content: center;  /* Centraliza os elementos */
+    gap: 0.20rem;  /* Espaçamento entre os itens */
 }

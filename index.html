@@ -3,75 +3,68 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap: Biblioteca para estilização e responsividade -->
     <link href="./css/bootstrap.min.css" rel="stylesheet" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Merriweather:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+
+    <!-- Fontes personalizadas para dar um toque acolhedor ao design -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Merriweather:wght@400;700&display=swap" rel="stylesheet" />
+
+    <!-- Estilos específicos do projeto -->
     <link rel="stylesheet" href="css/style.css" />
+
     <title>Sabor & Cia - Receitas Aconchegantes</title>
   </head>
 
   <body>
-    <!-- Header -->
-    <header
-      class="bg-light py-5 text-center shadow mb-5"
-      style="
-        background-image: url('assets/images/wood_texture.jpg');
-        background-size: cover;
-      "
-    >
-      <h1 class="logo">Sabor & Cia</h1>
-      <p class="tagline">Receitas com o carinho da casa da Vó</p>
+
+    <!-- Cabeçalho da página com título e subtítulo acolhedores -->
+    <header class="bg-light py-5 text-center shadow mb-5" 
+            style="background-image: url('assets/images/wood_texture.jpg'); background-size: cover;">
+      <h1 class="logo">Sabor & Cia</h1> <!-- Título principal da página -->
+      <p class="tagline">Receitas com o carinho da casa da Vó</p> <!-- Subtítulo com um toque familiar -->
     </header>
 
-    <!-- Banner -->
+    <!-- Banner com botões para navegação rápida -->
     <section class="banner text-center py-5 mb-5">
       <h2>Sabores que Acolhem</h2>
       <p>Encontre receitas simples, que aquecem a alma e o coração.</p>
-      <button
-        class="btn btn-banner"
-        onclick="window.location.href='./about.html'"
-      >
-        Sobre nós
-      </button>
-      <button
-        class="btn btn-banner"
-        onclick="window.location.href='./contact.html'"
-      >
-        Contato
-      </button>
-      <button
-        class="btn btn-banner"
-        onclick="window.location.href='./formulario.html'"
-      >
-        Adicionar Receita
-      </button>
+
+      <!-- Botão para a página "Sobre Nós" -->
+      <button class="btn btn-banner" onclick="window.location.href='./about.html'">Sobre nós</button>
+
+      <!-- Botão para a página de contato -->
+      <button class="btn btn-banner" onclick="window.location.href='./contact.html'">Contato</button>
+
+      <!-- Botão para adicionar uma nova receita -->
+      <button class="btn btn-banner" onclick="window.location.href='./formulario.html'">Adicionar Receita</button>
     </section>
 
-    <div class="pai-pesquisar">
-      <input
-        type="text"
-        id="input-pesquisa"
-        placeholder="pesquisar receita"
-        style="border-radius: 6px; border-color: #ccc"
-      />
+    <!-- Barra de pesquisa para encontrar receitas -->
+    <div class="pai-pesquisar text-center mb-5">
+      <input type="text" id="input-pesquisa" placeholder="Pesquisar receita" 
+             style="border-radius: 6px; border-color: #ccc" />
       <button class="btn-pesquisar" onclick="pesquisar()">Pesquisar</button>
     </div>
 
-    <!-- Receitas em Destaque -->
+    <!-- Seção onde as receitas em destaque serão exibidas -->
     <section class="container py-5">
       <h2 class="mb-4 text-center">Receitas da Vovó</h2>
+
+      <!-- Container onde as receitas serão carregadas dinamicamente -->
       <div id="recipe-carousel" class="row g-4">
-        <!-- Receitas carregadas dinamicamente -->
+        <!-- Receitas serão inseridas via JavaScript -->
       </div>
     </section>
-    
 
+    <!-- Rodapé da página com informações de direitos autorais -->
     <footer class="rodape py-4 text-center mt-5">
       <p>&copy; 2025 Sabor & Cia. Todos os direitos reservados.</p>
     </footer>
 
+    <!-- Script principal da página, que gerencia a pesquisa e a exibição das receitas -->
     <script src="js/main.js"></script>
+
   </body>
 </html>
+
