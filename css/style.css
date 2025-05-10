@@ -1,4 +1,4 @@
-
+/* Fundo da página com cor suave, imagem fixa e textura sutil */
 body {
     background-color: #F7ECE1;
     font-family: 'Merriweather', serif;
@@ -8,17 +8,20 @@ body {
     background-attachment: fixed;
 }
 
+/* Estilo do título principal (logo) */
 .logo {
     font-family: 'Great Vibes', cursive;
     font-size: 5rem;
     color: #D4A373;
 }
 
+/* Estilo do subtítulo (slogan) */
 .tagline {
     font-style: italic;
     color: #8B5E3C;
 }
 
+/* Estilo da área do banner */
 .banner {
     background-color: rgba(212, 163, 115, 0.9);
     background-size: cover;
@@ -28,6 +31,7 @@ body {
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
 }
 
+/* Estilo dos cartões de receitas */
 .card {
     border-radius: 20px;
     background-color: #FFE5D9;
@@ -35,34 +39,42 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Efeito hover nos cartões */
 .card:hover {
     transform: scale(1.03);
     box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.15);
 }
 
+/* Estilo dos botões principais */
 .btn-primary {
     background-color: #D4A373;
     border-color: #D4A373;
     border-radius: 30px;
     font-weight: bold;
 }
-.btn-banner{
+
+/* Estilo específico para botões no banner */
+.btn-banner {
     background-color: #ffe5d9;
     border-color: #ffe5d9;
     border-radius: 30px;
     font-weight: bold;
 }
+
+/* Efeito hover nos botões principais */
 .btn-primary:hover {
     background-color: #6C584C;
 }
 
-.btn-inicio{
+/* Centralização dos botões de navegação */
+.btn-inicio {
     margin: 20px;
     display: flex;
     justify-content: center;
 }
 
-footer{
- background-color: #ffe5d9;
- color: #6C584C;
+/* Estilo do rodapé */
+footer {
+    background-color: #ffe5d9;
+    color: #6C584C;
 }

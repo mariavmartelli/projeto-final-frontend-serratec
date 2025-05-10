@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap para facilitar a criação de layout e estilização -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Fontes personalizadas para dar um visual mais acolhedor -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Estilos específicos da aplicação -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Adicionar Receita - Sabor & Cia</title>
+</head>
+<body>
+
+    <!-- Cabeçalho da página com título e subtítulo -->
+    <header class="bg-light py-5 text-center shadow" 
+            style="background-image: url('assets/images/wood_texture.jpg'); background-size: cover;">
+        <h1 class="logo">Sabor & Cia</h1>
+        <p class="tagline">Receitas com o carinho da casa da Vó</p>
+    </header>
+
+    <!-- Seção do formulário para adicionar receita -->
+    <section class="container py-5">
+        <h2 class="mb-4 text-center">Receita</h2>
+
+        <!-- Formulário com campos para cadastrar nova receita -->
+        <div class="p-4 bg-white shadow rounded" 
+             style="max-width: 600px; margin: auto; background-color: #FFE5D9;">
+            <form id="contactForm">
+
+                <!-- Campo para o nome do autor da receita -->
+                <div class="mb-3">
+                    <label for="autor" class="form-label">Autor</label>
+                    <input type="text" class="form-control" id="autor" required>
+                </div>
+
+                <!-- Campo para o nome da receita -->
+                <div class="mb-3">
+                    <label for="receita" class="form-label">Receita</label>
+                    <input type="text" class="form-control" id="receita" required>
+                </div>
+
+                <!-- Campo para a descrição da receita -->
+                <div class="mb-3">
+                    <label for="message" class="form-label">Descrição</label>
+                    <textarea class="form-control" id="message" rows="2" required></textarea>
+                </div>
+
+                <!-- Campo para os ingredientes da receita -->
+                <div class="mb-3">
+                    <label for="igredientes" class="form-label">Ingredientes</label>
+                    <textarea class="form-control" id="igredientes" rows="2" required></textarea>
+                </div>
+
+                <!-- Campo para o método de preparo da receita -->
+                <div class="mb-3">
+                    <label for="preparo" class="form-label">Método de preparo</label>
+                    <textarea class="form-control" id="preparo" rows="5" required></textarea>
+                </div>
+
+                <!-- Campo para inserir a URL da imagem da receita -->
+                <div class="mb-3">
+                    <label for="imagem" class="form-label">Imagem da Receita</label>
+                    <input type="text" class="form-control" placeholder="Inclua a URL" id="imagem" name="imagem" accept="image/*" required>
+                </div>
+
+                <!-- Botões para enviar a receita ou voltar ao início -->
+                <div class="text-center">
+                    <button onclick="salvarReceita()" type="button" class="btn btn-primary">Enviar Receita</button>
+                    <button class="btn btn-primary" onclick="window.location.href='./index.html'">Voltar ao início</button>
+                </div>
+
+            </form>
+        </div>
+    </section>
+
+    <!-- Rodapé da página com direitos autorais -->
+    <footer class="rodape py-4 text-center mt-5">
+        <p>&copy; 2025 Sabor & Cia. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Script que gerencia a ação de envio da receita -->
+    <script src="js/evento.js"></script>
+</body>
+</html>
