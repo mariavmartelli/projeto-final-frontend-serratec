@@ -25,7 +25,10 @@ O objetivo deste projeto é criar um site de receitas inspirado no aconchego da 
 - João Vitor Carneiro  
 - Maria Vitória Martelli  
 - Matheus dos Santos Duarte  
-- Raílla Duarte  
+- Raílla Duarte
+
+## 👥 **Integrantes do Grupo:**
+link netlify: https://receitas-da-vovo.netlify.app/
 
 
 
