@@ -28,7 +28,7 @@ O objetivo deste projeto é criar um site de receitas inspirado no aconchego da 
 - Raílla Duarte
 
 ## 🌐 **Como acessar:**
-- link netlify: https://receitas-da-vovo.netlify.app/
+- link netlify: https://sabor-e-cia.netlify.app/index.html
 
 
 
