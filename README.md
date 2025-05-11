@@ -27,8 +27,8 @@ O objetivo deste projeto é criar um site de receitas inspirado no aconchego da 
 - Matheus dos Santos Duarte  
 - Raílla Duarte
 
-## 👥 **Integrantes do Grupo:**
-link netlify: https://receitas-da-vovo.netlify.app/
+## 🌐 Como acessar:**
+- link netlify: https://receitas-da-vovo.netlify.app/
 
 
 
