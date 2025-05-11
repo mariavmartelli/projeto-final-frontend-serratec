@@ -79,7 +79,7 @@ footer {
 
 /* Estilo para títulos grandes */
 .titulo {
-    font-size: 70px;  /* Tamanho bem grande para destaque */
+    font-size: 50px;  /* Tamanho bem grande para destaque */
 }
 
 /* Estilo para textos em tamanho normal */
@@ -108,4 +108,12 @@ footer {
     display: flex;  /* Exibe os elementos em linha */
     justify-content: center;  /* Centraliza os elementos */
     gap: 0.20rem;  /* Espaçamento entre os itens */
+}
+
+/*Deixar detalhes da receita responsivo*/
+@media (max-width:900px) {
+#receita-detalhes{
+    display: flex;
+    flex-direction: column;
+}
 }
