@@ -1,6 +1,6 @@
 # 🍰 Sabor & Cia - Receitas Acolhedoras
 
-Projeto desenvolvido como requisito da disciplina **Frontend Essencial**, com foco em estruturação HTML semântica, estilização CSS, interatividade JavaScript, deploy no Netlify e integração com GitHub.
+Projeto desenvolvido como requisito da disciplina **Frontend Essencial**, do SERRATEC, com foco em estruturação HTML semântica, estilização CSS, interatividade JavaScript, deploy no Netlify e integração com GitHub.
 
 ---
 
@@ -27,7 +27,7 @@ O objetivo deste projeto é criar um site de receitas inspirado no aconchego da 
 - Matheus dos Santos Duarte  
 - Raílla Duarte
 
-## 🌐 Como acessar:**
+## 🌐 **Como acessar:**
 - link netlify: https://receitas-da-vovo.netlify.app/
 
 
