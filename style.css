@@ -1,0 +1,121 @@
+/* Configuração geral do corpo */
+body {
+    background-color: #F7ECE1;
+    font-family: 'Merriweather', serif;
+    color: #6C584C;
+    
+    /* Adicionando imagens de fundo */
+    background-image: url('../assets/images/wood.png'), url('../assets/images/fundo-extra.png');
+    background-size: cover, contain;
+    background-position: center, bottom;
+    background-attachment: fixed;
+
+    margin: 0;
+    padding: 0;
+}
+
+/* Zerando margens globais */
+body, header {
+    margin: 0;
+    padding: 0;
+}
+
+/* Ajuste no cabeçalho */
+.top-header {
+    text-align: center;
+    padding: 20px 0;
+    border: none;
+}
+
+/* Ajuste na imagem do topo */
+.imagem-topo {
+    width: 450px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+    position: relative;
+}
+
+/* Estilização da logo */
+.logo {
+    font-family: 'Great Vibes', cursive;
+    font-size: 10rem;
+    color: #D4A373;
+    margin-bottom: 10px;
+}
+
+/* Ajuste na tagline */
+.tagline {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+    color: #8B5E3C;
+    margin-top: -20px;
+    text-align: center;
+    display: block;
+}
+
+/* Banner */
+.banner {
+    font-size: 2rem;
+    background-color: rgba(212, 163, 115, 0.9);
+    background-size: cover;
+    background-blend-mode: darken;
+    padding: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilização dos cartões */
+.card {
+    border-radius: 20px;
+    background-color: #FFE5D9;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito de destaque ao passar o mouse */
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 8px 12px rgb(218, 124, 10);
+}
+
+/* Estilização dos botões */
+.btn-primary, .btn-banner {
+    border-radius: 100px;
+    font-weight: bold;
+    padding: 10px 20px;
+    font-size: 1.8rem;
+}
+
+/* Botões individuais */
+.btn-primary {
+    background-color: #D4A373;
+    border-color: #D4A373;
+}
+
+.btn-banner {
+    background-color: #FFE5D9;
+    border-color: #FFE5D9;
+}
+
+/* Efeito ao passar o mouse nos botões */
+.btn-primary:hover, .btn-banner:hover {
+    background-color: #6C584C;
+    color: #fff;
+}
+
+/* Botão de voltar ao início */
+.btn-inicio {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Rodapé */
+footer {
+    background-color: #FFE5D9;
+    color: #6C584C;
+    text-align: center;
+    padding: 15px 0;
+}
